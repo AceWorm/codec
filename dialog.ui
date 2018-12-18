@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>常用字串处理</string>
+  </property>
+  <widget class="QTextEdit" name="rawTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>数据区</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="aimTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>0</y>
+     <width>300</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>数据区</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="encBase64PushButton">
+   <property name="geometry">
+    <rect>
+     <x>323</x>
+     <y>6</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>将左侧编辑框数据进行Base64编码并输出到右侧编辑框</string>
+   </property>
+   <property name="text">
+    <string>编Base64 &gt;&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="decBase64PushButton">
+   <property name="geometry">
+    <rect>
+     <x>323</x>
+     <y>56</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>将右侧编辑框数据进行Base64解码并输出到左侧编辑框</string>
+   </property>
+   <property name="text">
+    <string>&lt;&lt; 解Base64</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="encHexPushButton">
+   <property name="geometry">
+    <rect>
+     <x>323</x>
+     <y>124</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>将左侧编辑框数据进行Hex编码并输出到右侧编辑框</string>
+   </property>
+   <property name="text">
+    <string>编Hex &gt;&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="decHexPushButton">
+   <property name="geometry">
+    <rect>
+     <x>323</x>
+     <y>174</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>将右侧编辑框数据进行Hex解码并输出到左侧编辑框</string>
+   </property>
+   <property name="text">
+    <string>&lt;&lt; 解Hex</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>314</x>
+     <y>105</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearLeftTextEditPushButton">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>402</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>清空左侧编辑框</string>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveLeftTextEditPushButton">
+   <property name="geometry">
+    <rect>
+     <x>173</x>
+     <y>402</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>保存解码后的数据</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveRightTextEditPushButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>402</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>保存编码后的数据</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearRightTextEditPushButton">
+   <property name="geometry">
+    <rect>
+     <x>491</x>
+     <y>402</y>
+     <width>100</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>清空右侧编辑框</string>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>314</x>
+     <y>222</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>244</y>
+     <width>141</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 5px;
+}</string>
+   </property>
+   <property name="title">
+    <string>数据校验</string>
+   </property>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>18</y>
+      <width>100</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>可选校验类型</string>
+    </property>
+    <property name="maxVisibleItems">
+     <number>11</number>
+    </property>
+    <property name="maxCount">
+     <number>12</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>MD4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA1</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="calcInputHashPushButton">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>53</y>
+      <width>100</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>依据指定类型计算左侧编辑框数据的校验结果并输出到右侧编辑框</string>
+    </property>
+    <property name="text">
+     <string>输入校验 &gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calcFileHashPushButton">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>101</y>
+      <width>100</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>依据指定类型计算指定文件的校验结果并输出到右侧编辑框</string>
+    </property>
+    <property name="text">
+     <string>文件校验 &gt;&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
